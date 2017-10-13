@@ -7,7 +7,7 @@
     "node": "8.x.x"
   },
   "scripts": {
-    "start": "node src/index.js",
+   "start": "node ./node_modules/nodemon/bin/nodemon.js --watch ./src -e js src/index.js",
     "test": "mocha --timeout 10000 && npm run lint",
     "lint": "eslint ."
   },
